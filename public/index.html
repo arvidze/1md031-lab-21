@@ -3,50 +3,58 @@
 <head>
     <title>BurgerOnline</title>
     <meta charset="utf-8"/>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color:whitesmoke">
-<header>
-    <h1> Welcome to BurgerOnline</h1>
-    <hr>
+<body>
+<header class="format">
+    <div id="container">
+    <img id="headerimage" src="https://www.cityworksrestaurant.com/pittsburgh/wp-content/uploads/sites/7/2018/02/header-food-burgers-beer-1600-300.png");>
+        <h1 id="headertext"> Welcome to BurgerOnline</h1>
+    </div>
 </header>
+
+<hr>
+
 <main>
-    <section>
-       <h2> Select burger: </h2>
-    </section>
-    <section>
-        <div style="float:left;margin:3% "><h3>Fire burger:</h3>
+    <section id="burgerselection" class="format">
+       <h2 class="format"> Select burger: </h2>
+        <p class="format"> This is where you select your burger</p>
+        <div class="wrapper">
+
+        <div class="burgers"><h3>Fire burger:</h3>
             <img src="https://kbr.com.pk/wp-content/uploads/2020/08/burger.jpg" alt="Burger" style="width: 300px;height:200px">
             <ul>
                 <li>98% meat</li>
-                <li>Contains gluten and lactose</li>
+                <li>Contains <span class="gluten"> gluten </span>  and <span class="lactose"> lactose </span> </li>
                 <li>100% fire</li>
             </ul> </div>
 
-        <div style="float:left;margin:3%"><h3>Chicken burger:</h3>
+        <div class="burgers"><h3>Chicken burger:</h3>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzJIbszy7fOPbHfOZsRiwiOVv2byQ4GLMJg&usqp=CAU" alt="Chicken burger" style="width: 300px;height:200px">
             <ul>
                 <li>98% chicken</li>
-                <li>Contains gluten and lactose</li>
+                <li>Contains <span class="gluten"> gluten </span> and <span class="lactose"> lactose </span></li>
                 <li>100% delicious</li>
             </ul> </div>
 
-        <div style="float:left;margin:3%"><h3>Vegan burger</h3>
+        <div class="burgers"><h3>Vegan burger</h3>
             <img src="https://www.thespruceeats.com/thmb/K27YgK9PMkhtll2EqIW6x-Crg-E=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/vegan-mushroom-bean-burger-recipe-3378623-13_preview1-5b241897fa6bcc0036d2c9bf.jpeg" alt="Vego burger" style="width: 300px;height:200px">
             <ul>
                 <li>0% meat</li>
-                <li>Doesn't contain gluten and lactose</li>
+                <li>Very good! </li>
                 <li>100% vegan friendly</li>
             </ul> </div>
+        </div>
     </section>
-    <section style="clear:left">
-        <h2> Customer information </h2>
 
-    </section>
-    <h3> Delivery information:</h3>
     <section id="delivery">
-        <form>
+    <h2 class="format"> Customer information </h2>
+    <p class="format"> This is where you enter information</p>
+    <h3 class="format"> Delivery information:</h3>
+
+
+        <form class="format">
             <p>
                 <label for="fullname">Full name:</label><br>
                 <input type="text" id="fullname" name="fn" required="required" placeholder="First and last name">
@@ -93,11 +101,12 @@
             <br>
 
         </form>
+    </section>
         <button type="submit">
             <img src="https://icons.iconarchive.com/icons/google/noto-emoji-food-drink/1024/32382-hamburger-icon.png" style="width:12px" >
             Send Info
         </button>
-    </section>
+
 </main>
 <hr>
 <footer>
