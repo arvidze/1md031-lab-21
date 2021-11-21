@@ -9,16 +9,21 @@
       <li v-if="burger.gluten">Contains <span class="gluten">Gluten</span></li>
       <li v-else>Does not contain <span class="gluten">Gluten</span></li>
 
-      <button type="button" v-on:click="addBurger">
-        +
-      </button>
-      <button type="button" v-on:click="removeBurger">
-        -
-      </button>
 
-      <p> Amount: {{ amountOrdered }} </p>
 
-    </ul> </div>
+
+
+
+    </ul>
+    <button type="button" v-on:click="addBurger">
+      +
+    </button>
+    <button type="button" v-on:click="removeBurger">
+      -
+    </button>
+
+    <p>Amount: {{ amountOrdered }} </p>
+  </div>
 </template>
 
 <script>
@@ -53,6 +58,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+button{
+  height:50px;
+  width: 50px;
+}
 .gluten {
   font-weight: bold;
 }

@@ -8,8 +8,8 @@
 
   <hr>
 
-  <main>
-    <section id="burgerSelection" class="format">
+  <main id="grad">
+    <section id="burgerSelection" class="format" >
       <h2 class="format"> Select burger: </h2>
       <p class="format"> This is where you select your burger</p>
       <div class="wrapper">
@@ -131,8 +131,8 @@ export default {
       rcp:"",
       gender:"",
       orderedBurgers:{},
-      location: { x: 0,
-        y: 0
+      location: { x: -20,
+        y: -20
       }
     }
 
@@ -270,5 +270,7 @@ button:hover {
     height: 450px;
     overflow:scroll;
     margin-bottom: 20px;
+    border:groove
   }
+
 </style>
